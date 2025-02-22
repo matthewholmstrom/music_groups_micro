@@ -23,7 +23,7 @@ To programmatically request data from the microservice, you need first have both
 If your program wants to restore your most recent backup group, the you would send the single parameter string "restore" to the request.txt file. For example, your main program would send this to request.txt; responseIf 
 
 If your program wants to delete your  recent backup group, the you would send two string parameters (one above the other) to the request.txt file. For example, your main program would send this to request.txt; delete
-                                                                                 drums_v1
+                                                                                 backup
 
 
 
@@ -31,12 +31,12 @@ B. Clear instructions for how to programmatically RECEIVE data from the microser
 
 If your main program wants to receive the data that the microservice sends, after you requested save to the microservice, then you would look at the content of the response.txt file and extract those strings from that text file. The microservice sends its responses to response.txt. For example the response.txt file might look something like;      success
                                                                                 Track/effect groups saved successfully
-                                                                                Backup_Name=Drums_v1
+                                                                                Backup_Name=backup
 
 
 If your main program wants to receive the data that the microservice sends, after you requested restore to the microservice, then you would look at the content of the response.txt file and extract those strings from that text file. For example the response.txt file might look something like;      success
                           Track/effect groups restored successfully
-                          {"groups": [{"group_id": 1, "group_name": "Drums", "items": ["Kick", "Snare", "Hi-Hat"]}, {"group_id": 2, "group_name": "Synths", "items": ["Lead", "Pad", "Bass"]}], "backup_name": "Drums_v1", "timestamp": "2025-02-19T14:30:00"}
+                          {"groups": [{"group_id": 1, "group_name": "Drums", "items": ["Kick", "Snare", "Hi-Hat"]}, {"group_id": 2, "group_name": "Synths", "items": ["Lead", "Pad", "Bass"]}], "backup_name": "backup", "timestamp": "2025-02-19T14:30:00"}
 
 
 
@@ -48,3 +48,7 @@ If your main program wants to receive the data that the microservice sends, afte
                       
 
 C. UML sequence diagram showing how requesting and receiving data works. Make it detailed enough that your teammate (and your grader) will understand.
+
+
+![UML diagrams](https://github.com/user-attachments/assets/377d8640-0354-4ea0-a38a-7cccde02c449)
+
