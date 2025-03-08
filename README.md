@@ -50,5 +50,6 @@ Again GitHub incorrectly reformatted my example call where the main program rece
 C. UML sequence diagram showing how requesting and receiving data works. Make it detailed enough that your teammate (and your grader) will understand.
 
 
-![UML diagrams](https://github.com/user-attachments/assets/377d8640-0354-4ea0-a38a-7cccde02c449)
+![UML diagrams (1)](https://github.com/user-attachments/assets/a67a5c96-154c-4b45-b2e9-e8a6fce7961e)
+
 
